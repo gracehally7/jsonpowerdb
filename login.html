@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+    <div class="container">
+        <h2>Student registration form</h2>
+        <form id="empForm" method="post">
+            <div class="form-group">
+                <span><label for="empId">Employee ID:</label> <label id="empIdMsg">
+                </label></span>
+                <input type="text" class="form-control" name="empId" id="empId"
+                placeholder="Enter Employee ID" required>
+            </div>
+            <div class="form-group">
+                <label for="empName">Employee Name:</label>
+                <input type="text" class="form-control" id="empName"
+                placeholder="Enter Employee Name" name="empName">
+            </div>
+            <div class="form-group">
+                <label for="empSalary">Salary:</label>
+                <input type="number" class="form-control" id="empEmail"
+                placeholder="Enter Employee salary" name="empEmail">
+            </div>
+            <div class="form-group">
+                <label for="empHra">Hra:</label>
+                <input type="text" class="form-control" id="empEmail"
+                placeholder="Enter Employee hra" name="empEmail">
+            </div>
+            <div class="form-group">
+                <label for="empDa">DA:</label>
+                <input type="number" class="form-control" id="empEmail"
+                placeholder="Enter Employee Da" name="empEmail">
+            </div>
+            <div class="form-group">
+                <label for="empDeduction">Deduction:</label>
+                <input type="number" class="form-control" id="empDeduction"
+                placeholder="Enter Employee deduction" name="empDeduction">
+            </div>
+            <input type="button" class="btn btn-primary" id="SaveData" value="Save"
+                onclick="saveEmployee();">
+            <input type="button" class="btn btn-primary" id="ResetData" value="Reset"
+                onclick="ChangeEmployee();">
+            <input type="button" class="btn btn-primary" id="ChangeData" value="Change"
+                onclick="ResetEmployee();">
+        </form>
+    </div>
+
+<!-- the variable json str is the data gotten from the form, then we create a put request, then it will execute command -->
+     <script src=""></script>
+    <script src="login.js"></script>
+</body>
+</html>
